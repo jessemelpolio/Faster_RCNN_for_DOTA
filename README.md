@@ -1,14 +1,16 @@
 ## Disclaimer
 This is the official repo of paper [_DOTA: A Large-scale Dataset for Object Detection in Aerial Images_](https://arxiv.org/abs/1711.10398). This repo contains code for training Faster R-CNN on oriented bounding boxes and horizontal bounding boxes as reported in our paper.
 
+This code is mostly modified by [Zhen Zhu](https://github.com/jessemelpolio) and [Jian Ding]()
+
 If you use these code in your project, please contain this repo in your paper or license. Please also cite our paper:
 
 DOTA: A Large-scale Dataset for Object Detection in Aerial Images  
 Gui-Song Xia\*, Xiang Bai\*, Jian Ding, Zhen Zhu, Serge Belongie, Jiebo Luo, Mihai Datcu, Marcello Pelillo, Liangpei Zhang  
 In CVPR 2018. (* equal contributions)
 
-The code is build on a fork of [deformble](https://github.com/msracver/Deformable-ConvNets) 
-We use the Faster-RCNN part of it. We made some modifications based on Faster-RCNN to regress a quatrangle. More details can be seen in our [paper](https://arxiv.org/abs/1711.10398).
+The code is build on a fork of [Deformble Convolutional Networks](https://github.com/msracver/Deformable-ConvNets).
+We use the Faster-RCNN part of it and make some modifications based on Faster-RCNN to regress a quadrangle. More details can be seen in our [paper](https://arxiv.org/abs/1711.10398).
 
 ## Requirements: Software
 
@@ -33,7 +35,7 @@ Any NVIDIA GPUs with at least 4GB memory should be sufficient.
 
 1. Clone the repository
 ~~~
-git clone https://gitee.com/dingjiansw101/faster-rcnn-mxnet
+git clone https://github.com/jessemelpolio/Faster_RCNN_for_DOTA.git
 ~~~
 2. For Windows users, run ``cmd .\init.bat``. For Linux user, run `sh ./init.sh`. The scripts will build cython module automatically and create some folders.
 
