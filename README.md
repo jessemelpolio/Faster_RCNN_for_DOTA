@@ -1,7 +1,7 @@
 ## Disclaimer
 This is the official repo of paper [_DOTA: A Large-scale Dataset for Object Detection in Aerial Images_](https://arxiv.org/abs/1711.10398). This repo contains code for training Faster R-CNN on oriented bounding boxes and horizontal bounding boxes as reported in our paper.
 
-This code is mostly modified by [Zhen Zhu](https://github.com/jessemelpolio) and [Jian Ding]()
+This code is mostly modified by [Zhen Zhu](https://github.com/jessemelpolio) and [Jian Ding]().
 
 If you use these code in your project, please contain this repo in your paper or license. Please also cite our paper:
 
@@ -43,9 +43,9 @@ git clone https://github.com/jessemelpolio/Faster_RCNN_for_DOTA.git
 
 We provide trained convnet models, including Faster R-CNN models trained on DOTA.
 
-1. To use the demo with our pre-trained faster-rcnn models for DOTA, please download manually from [OneDrive](https://drive.google.com/open?id=1b6P-UMaBBpMPlcgvc38dMToPAa_Gyu6F), or [BaiduYun](https://pan.baidu.com/s/1YuB5ib7O-Ori1ZpiGf8Egw)and put it under the following folder.
+1. To use the demo with our pre-trained faster-rcnn models for DOTA, please download manually from [OneDrive](https://drive.google.com/open?id=1b6P-UMaBBpMPlcgvc38dMToPAa_Gyu6F), or [BaiduYun](https://pan.baidu.com/s/1YuB5ib7O-Ori1ZpiGf8Egw) and put it under the following folder.
 
-	Make sure it looks like this:
+	Make sure it look like this:
 	```
     ./output/rcnn/DOTA_quadrangle/DOTA_quadrangle/train/rcnn_DOTA_quadrangle-0059.params
 	./output/rcnn/DOTA/DOTA/train/rcnn_DOTA_aligned-0032.params
@@ -56,7 +56,7 @@ We provide trained convnet models, including Faster R-CNN models trained on DOTA
 
 <!-- For R-FCN/Faster R-CNN\: -->
 
-1. Please download [DOTA](https://captain-whu.github.io/DOTA/dataset.html) dataset, use the [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) to split the data into patches. And make sure the split images looks like this:
+1. Please download [DOTA](https://captain-whu.github.io/DOTA/dataset.html) dataset, use the [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit) to split the data into patches. And make sure the split images look like this:
 ```
 ./path-to-dota-split/images
 ./path-to-dota-split/labelTxt
@@ -66,7 +66,7 @@ We provide trained convnet models, including Faster R-CNN models trained on DOTA
 The test.txt and train.txt are name of the subimages(without suffix) for train and test respectively.
 
 
-2. Please download ImageNet-pretrained ResNet-v1-101 model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMEtxf1Ciym8uZ8sg), and put it under folder `./model`. Make sure it looks like this:
+2. Please download ImageNet-pretrained ResNet-v1-101 model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMEtxf1Ciym8uZ8sg), and put it under folder `./model`. Make sure it look like this:
 	```
 	./model/pretrained_model/resnet_v1_101-0000.params
 	```
@@ -77,9 +77,9 @@ The test.txt and train.txt are name of the subimages(without suffix) for train a
 
 2. Set the "dataset_path" and "root_path" in DOTA.yaml and DOTA_quadrangle.yaml. The "dataset_path" should be the father folder of "images" and "labelTxt". The "root_path" is the path you want to save the cache data.
 
-3. Set the scales in DOTA.yaml and DOTA_quadrangle.yaml.
+3. Set the scales and aspect ratios as your wish in DOTA.yaml and DOTA_quadrangle.yaml.
 
-3. To perform experiments, run the python scripts with the corresponding config file as input. For example, train and test on quadrangle, run
+3. To conduct experiments, run the python scripts with the corresponding config file as input. For example, train and test on quadrangle in an end-to-end manner, run
     ```
 	python experiments/faster_rcnn/rcnn_dota_e2e.py --cfg experiments/faster_rcnn/cfgs/DOTA.yaml
     ```
