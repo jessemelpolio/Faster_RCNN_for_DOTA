@@ -1,0 +1,15 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
