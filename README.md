@@ -66,7 +66,7 @@ We provide trained convnet models, including Faster R-CNN models trained on DOTA
 The test.txt and train.txt are name of the subimages(without suffix) for train and test respectively.
 
 
-2. Please download ImageNet-pretrained ResNet-v1-101 model manually from [Google Drive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMEtxf1Ciym8uZ8sg), and put it under folder `./model`. Make sure it look like this:
+2. Please download ImageNet-pretrained ResNet-v1-101 model manually from [OneDrive](https://1drv.ms/u/s!Am-5JzdW2XHzhqMEtxf1Ciym8uZ8sg), and put it under folder `./model`. Make sure it look like this:
 	```
 	./model/pretrained_model/resnet_v1_101-0000.params
 	```
