@@ -9,21 +9,21 @@ DOTA: A Large-scale Dataset for Object Detection in Aerial Images
 Gui-Song Xia\*, Xiang Bai\*, Jian Ding, Zhen Zhu, Serge Belongie, Jiebo Luo, Mihai Datcu, Marcello Pelillo, Liangpei Zhang  
 In CVPR 2018. (* equal contributions)
 
-The code is build on a fork of [Deformble Convolutional Networks](https://github.com/msracver/Deformable-ConvNets).
+The code is built upon a fork of [Deformble Convolutional Networks](https://github.com/msracver/Deformable-ConvNets).
 We use the Faster-RCNN part of it and make some modifications based on Faster-RCNN to regress a quadrangle. More details can be seen in our [paper](https://arxiv.org/abs/1711.10398).
 
 ## Requirements: Software
 
 1. MXNet from [the offical repository](https://github.com/dmlc/mxnet). We tested our code on [MXNet@(commit 62ecb60)](https://github.com/dmlc/mxnet/tree/62ecb60). Due to the rapid development of MXNet, it is recommended to checkout this version if you encounter any issues. 
 
-2. Python 2.7. We recommend using Anaconda2
+2. Python 2.7. We recommend using Anaconda2 to manage the environments and packages.
 
-3. Python packages might missing: cython, opencv-python >= 3.2.0, easydict. If `pip` is set up on your system, those packages should be able to be fetched and installed by running
-	```
-	pip install Cython
-	pip install opencv-python==3.2.0.6
-	pip install easydict==1.6
-	```
+3. Some python packages: cython, opencv-python >= 3.2.0, easydict. If `pip` is set up on your system, those packages should be able to be fetched and installed by running:
+```
+pip install Cython
+pip install opencv-python==3.2.0.6
+pip install easydict==1.6
+```
 4. For Windows users, Visual Studio 2015 is needed to compile cython module.
 
 
