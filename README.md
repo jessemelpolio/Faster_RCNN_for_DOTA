@@ -81,7 +81,7 @@ The test.txt and train.txt are name of the subimages(without suffix) for train a
 
 3. To conduct experiments, run the python scripts with the corresponding config file as input. For example, train and test on quadrangle in an end-to-end manner, run
     ```
-	python experiments/faster_rcnn/rcnn_dota_e2e.py --cfg experiments/faster_rcnn/cfgs/DOTA_quadrangle.yaml
+	python experiments/faster_rcnn/rcnn_dota_quadrangle_e2e.py --cfg experiments/faster_rcnn/cfgs/DOTA_quadrangle.yaml
     ```
     <!-- A cache folder would be created automatically to save the model and the log under `output/rfcn_dcn_coco/`. -->
 4. Please find more details in config files and in our code.
