@@ -99,11 +99,12 @@ Code has been tested under:
 
 If you use our project, please cite:
 ```
-@article{xia2017dota,
-  title={DOTA: A Large-scale Dataset for Object Detection in Aerial Images},
-  author={Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
-  journal={arXiv preprint arXiv:1711.10398},
-  year={2017}
+@InProceedings{Xia_2018_CVPR,
+author = {Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
+title = {DOTA: A Large-Scale Dataset for Object Detection in Aerial Images},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2018}
 }
 ```
 
