@@ -9,21 +9,23 @@ DOTA: A Large-scale Dataset for Object Detection in Aerial Images
 Gui-Song Xia\*, Xiang Bai\*, Jian Ding, Zhen Zhu, Serge Belongie, Jiebo Luo, Mihai Datcu, Marcello Pelillo, Liangpei Zhang  
 In CVPR 2018. (* equal contributions)
 
-The code is build on a fork of [Deformble Convolutional Networks](https://github.com/msracver/Deformable-ConvNets).
+The code is built upon a fork of [Deformble Convolutional Networks](https://github.com/msracver/Deformable-ConvNets).
 We use the Faster-RCNN part of it and make some modifications based on Faster-RCNN to regress a quadrangle. More details can be seen in our [paper](https://arxiv.org/abs/1711.10398).
+Note that in order to achieve better results, we adjusted the order of the quadrilateral points in the annotations during training.
+. You can refer to  in DOTA\_devkit  [get_best_begin_point](https://github.com/CAPTAIN-WHU/DOTA_devkit/blob/master/dota_utils.py).
 
 ## Requirements: Software
 
 1. MXNet from [the offical repository](https://github.com/dmlc/mxnet). We tested our code on [MXNet@(commit 62ecb60)](https://github.com/dmlc/mxnet/tree/62ecb60). Due to the rapid development of MXNet, it is recommended to checkout this version if you encounter any issues. 
 
-2. Python 2.7. We recommend using Anaconda2
+2. Python 2.7. We recommend using Anaconda2 to manage the environments and packages.
 
-3. Python packages might missing: cython, opencv-python >= 3.2.0, easydict. If `pip` is set up on your system, those packages should be able to be fetched and installed by running
-	```
-	pip install Cython
-	pip install opencv-python==3.2.0.6
-	pip install easydict==1.6
-	```
+3. Some python packages: cython, opencv-python >= 3.2.0, easydict. If `pip` is set up on your system, those packages should be able to be fetched and installed by running:
+```
+pip install Cython
+pip install opencv-python==3.2.0.6
+pip install easydict==1.6
+```
 4. For Windows users, Visual Studio 2015 is needed to compile cython module.
 
 
@@ -81,7 +83,7 @@ The test.txt and train.txt are name of the subimages(without suffix) for train a
 
 3. To conduct experiments, run the python scripts with the corresponding config file as input. For example, train and test on quadrangle in an end-to-end manner, run
     ```
-	python experiments/faster_rcnn/rcnn_dota_e2e.py --cfg experiments/faster_rcnn/cfgs/DOTA.yaml
+	python experiments/faster_rcnn/rcnn_dota_quadrangle_e2e.py --cfg experiments/faster_rcnn/cfgs/DOTA_quadrangle.yaml
     ```
     <!-- A cache folder would be created automatically to save the model and the log under `output/rfcn_dcn_coco/`. -->
 4. Please find more details in config files and in our code.
@@ -99,12 +101,12 @@ Code has been tested under:
 
 If you use our project, please cite:
 ```
-@article{xia2017dota,
-  title={DOTA: A Large-scale Dataset for Object Detection in Aerial Images},
-  author={Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
-  journal={arXiv preprint arXiv:1711.10398},
-  year={2017}
+@InProceedings{Xia_2018_CVPR,
+author = {Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
+title = {DOTA: A Large-Scale Dataset for Object Detection in Aerial Images},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2018}
 }
 ```
-
 
