@@ -11,6 +11,8 @@ In CVPR 2018. (* equal contributions)
 
 The code is built upon a fork of [Deformble Convolutional Networks](https://github.com/msracver/Deformable-ConvNets).
 We use the Faster-RCNN part of it and make some modifications based on Faster-RCNN to regress a quadrangle. More details can be seen in our [paper](https://arxiv.org/abs/1711.10398).
+Note that in order to achieve better results, we adjusted the order of the quadrilateral points in the annotations during training.
+. You can refer to  in DOTA\_devkit  [get_best_begin_point](https://github.com/CAPTAIN-WHU/DOTA_devkit/blob/master/dota_utils.py).
 
 ## Requirements: Software
 
@@ -107,5 +109,4 @@ month = {June},
 year = {2018}
 }
 ```
-
 
