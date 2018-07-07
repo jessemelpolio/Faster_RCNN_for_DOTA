@@ -51,6 +51,7 @@ We provide trained convnet models, including Faster R-CNN models trained on DOTA
 	./output/rcnn/DOTA/DOTA/train/rcnn_DOTA_aligned-0032.params
 	```
 
+(Note) We also released the .state files recently. You can download them from [Google Drive](https://drive.google.com/open?id=1b6P-UMaBBpMPlcgvc38dMToPAa_Gyu6F), or [BaiduYun](https://pan.baidu.com/s/1YuB5ib7O-Ori1ZpiGf8Egw) and keep on fine-tuning our well-trained models on DOTA. 
 
 ## Preparation for Training & Testing
 
